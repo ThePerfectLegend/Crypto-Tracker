@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A88752A428350F4F00FC6DA1 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88752A328350F4F00FC6DA1 /* CoinViewModel.swift */; };
 		A8B9F0F328329A5E00DED873 /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9F0F228329A5E00DED873 /* CryptoApp.swift */; };
 		A8B9F0F528329A5E00DED873 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9F0F428329A5E00DED873 /* ContentView.swift */; };
 		A8B9F0FA28329A6200DED873 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B9F0F928329A6200DED873 /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A88752A328350F4F00FC6DA1 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
 		A8B9F0EF28329A5E00DED873 /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B9F0F228329A5E00DED873 /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
 		A8B9F0F428329A5E00DED873 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		A8B9F1082832A12500DED873 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A88752A328350F4F00FC6DA1 /* CoinViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8C86A7D2833C0D000724770 /* CoinRowView.swift in Sources */,
+				A88752A428350F4F00FC6DA1 /* CoinViewModel.swift in Sources */,
 				A8B9F0F528329A5E00DED873 /* ContentView.swift in Sources */,
 				A8B9F10A2832A14300DED873 /* HomeView.swift in Sources */,
 				A8B9F0F328329A5E00DED873 /* CryptoApp.swift in Sources */,
