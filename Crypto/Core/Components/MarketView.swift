@@ -9,12 +9,12 @@ import SwiftUI
 
 struct MarketView: View {
     
-    let stat: MarketModel
+    let stat: StatisticModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(stat.title)
-                .font(.callout)
+                .font(.subheadline)
                 .foregroundColor(Color.theme.secondaryText)
             Text(stat.value)
                 .font(.headline)

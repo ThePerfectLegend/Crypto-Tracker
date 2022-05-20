@@ -33,11 +33,7 @@ struct HomeView: View {
                     portfolioCoinsList
                         .transition(.move(edge: .trailing))
                 }
-                
-                
             }
-            
-            
         }
     }
 }

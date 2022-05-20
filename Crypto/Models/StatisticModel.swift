@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MarketModel: Identifiable {
+struct StatisticModel: Identifiable {
     
     let id = UUID().uuidString
     let title: String
