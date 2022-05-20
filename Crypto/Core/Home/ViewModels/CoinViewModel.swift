@@ -21,7 +21,18 @@ class CoinViewModel: ObservableObject {
         addSubscribers()
     }
     
+    
+    // May be this logic shoud be seperated? Video #11
+    
     func addSubscribers() {
+        
+//        coinDataService.$allCoins
+//            .sink { [weak self] (returnedCoins) in
+//                self?.allCoins = returnedCoins
+//            }
+//            .store(in: &cancellables)
+        
+        
         $searchText
             .combineLatest(coinDataService.$allCoins)
             .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
