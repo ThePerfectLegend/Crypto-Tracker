@@ -3,7 +3,7 @@
 //  Crypto
 //
 //  Created by Nizami Tagiyev on 19.05.2022.
-//
+//  Saving downloaded images into File Manager
 
 import Foundation
 import SwiftUI
