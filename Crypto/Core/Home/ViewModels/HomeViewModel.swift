@@ -8,10 +8,13 @@
 import Foundation
 import Combine
 
-class CoinViewModel: ObservableObject {
+class HomeViewModel: ObservableObject {
+    
+    @Published var statistic: [MarketModel] = []
     
     @Published var allCoins: [CoinModel] = []
     @Published var portfolioCoins: [CoinModel] = []
+    
     @Published var searchText: String = ""
     
     private let coinDataService = CoinDataService()
@@ -22,8 +25,6 @@ class CoinViewModel: ObservableObject {
     }
     
     
-    // May be this logic shoud be seperated? Video #11
-    
     func addSubscribers() {
         
 //        coinDataService.$allCoins
@@ -32,6 +33,7 @@ class CoinViewModel: ObservableObject {
 //            }
 //            .store(in: &cancellables)
         
+        // May be this logic shoud be seperated? Video #11
         
         $searchText
             .combineLatest(coinDataService.$allCoins)

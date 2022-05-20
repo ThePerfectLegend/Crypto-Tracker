@@ -24,7 +24,7 @@ class DeveloperPreview {
     // not allowed initialize from other parts of the app
     private init() {}
     
-    let coinVM = CoinViewModel()
+    let coinVM = HomeViewModel()
     
     let coin = CoinModel(
        id: "bitcoin",

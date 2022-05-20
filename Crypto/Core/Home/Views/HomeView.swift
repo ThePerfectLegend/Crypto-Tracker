@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @EnvironmentObject private var coinViewModel: CoinViewModel
+    @EnvironmentObject private var coinViewModel: HomeViewModel
     @State private var showPortfolio: Bool = false
     
     var body: some View {
@@ -21,9 +21,8 @@ struct HomeView: View {
             // content layer
             VStack {
                 homeHeader
-                
+                HomeStatView(showPortfolio: $showPortfolio)
                 SearchBarView(searchText: $coinViewModel.searchText)
-                
                 columnTitles
                 
                 if !showPortfolio {

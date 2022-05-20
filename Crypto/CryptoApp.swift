@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct CryptoApp: App {
     
-    @StateObject private var coinViewModel = CoinViewModel()
+    @StateObject private var coinViewModel = HomeViewModel()
     
     var body: some Scene {
         WindowGroup {
