@@ -26,7 +26,7 @@ class DeveloperPreview {
     
     let coinVM = CoinViewModel()
     
-    let coin = Coin(
+    let coin = CoinModel(
        id: "bitcoin",
        symbol: "btc",
        name: "Bitcoin",

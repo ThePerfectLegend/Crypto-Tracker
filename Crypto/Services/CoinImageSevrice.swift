@@ -14,12 +14,12 @@ class CoinImageSevrice {
     @Published var image: UIImage? = nil
     
     private var imageSubscription: AnyCancellable?
-    private let coin: Coin
+    private let coin: CoinModel
     private let fileManager = LocalFileManager.instance
     private let folderName = "coin_images"
     private let imageName: String
     
-    init(coin: Coin) {
+    init(coin: CoinModel) {
         self.coin = coin
         self.imageName = coin.id
         getCoinImage()
@@ -50,6 +50,6 @@ class CoinImageSevrice {
                 self.imageSubscription?.cancel()
                 self.fileManager.saveImage(image: downloadImage, imageName: self.imageName, folderName: self.folderName)
             })
-        
     }
+    
 }
