@@ -177,6 +177,7 @@
 				A8B9F10C2832A2EB00DED873 /* CircleButton */,
 				A8B6E2AC28375D210002928B /* SearchBarView.swift */,
 				A8099B462837819F00763F31 /* MarketView.swift */,
+				A8B6304C2838F1230083AD99 /* XmarkButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -186,7 +187,6 @@
 			children = (
 				A8B9F10D2832A30F00DED873 /* CircleButtonView.swift */,
 				A8B9F10F2832A82900DED873 /* CircleButtonAnimationView.swift */,
-				A8B6304C2838F1230083AD99 /* XmarkButton.swift */,
 			);
 			path = CircleButton;
 			sourceTree = "<group>";
