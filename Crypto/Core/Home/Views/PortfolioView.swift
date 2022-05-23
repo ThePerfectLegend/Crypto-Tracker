@@ -3,8 +3,7 @@
 //  Crypto
 //
 //  Created by Nizami Tagiyev on 21.05.2022.
-//  
-
+//
 import SwiftUI
 
 struct PortfolioView: View {
@@ -45,7 +44,7 @@ extension PortfolioView {
     private var coinLogoList: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 10) {
-                ForEach(coinViewModel.allCoins) { coin in
+                ForEach(coinViewModel.searchText.isEmpty ? coinViewModel.portfolioCoins : coinViewModel.allCoins) { coin in
                     CoinLogoView(coin: coin)
                         .frame(width: 70)
                         .padding(4)
@@ -118,9 +117,13 @@ extension PortfolioView {
     
     private func saveButtonPressed() {
         
-        guard let coin = selectedCoin else { return }
+        guard
+            let coin = selectedCoin,
+            let amount = Double(quantityText)
+        else { return }
         
         // save to portfolio
+        coinViewModel.updatePortfolio(coin: coin, amount: amount)
         
         // show checkmark
         withAnimation(.easeIn) {
