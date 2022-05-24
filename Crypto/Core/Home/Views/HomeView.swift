@@ -96,14 +96,43 @@ extension HomeView {
     
     private var columnTitles: some View {
         HStack {
-            Text("Coin")
+            HStack(spacing: 4) {
+                Text("Coin")
+                Image(systemName: "chevron.down")
+                    .opacity((coinViewModel.sortOption == .rank || coinViewModel.sortOption == .rankReverced) ? 1.0 : 0.0 )
+                    .rotationEffect(Angle(degrees: coinViewModel.sortOption == .rank ? 0 : 180))
+            }
+            .onTapGesture {
+                withAnimation {
+                    coinViewModel.sortOption = coinViewModel.sortOption == .rank ? .rankReverced : .rank
+                }
+            }
             Spacer()
             if showPortfolio {
-                Text("Holdings")
+                HStack(spacing: 4) {
+                    Text("Holdings")
+                    Image(systemName: "chevron.down")
+                        .opacity((coinViewModel.sortOption == .holdings || coinViewModel.sortOption == .holdingsReverced) ? 1.0 : 0.0 )
+                        .rotationEffect(Angle(degrees: coinViewModel.sortOption == .holdings ? 0 : 180))
+                }
+                .onTapGesture {
+                    withAnimation {
+                        coinViewModel.sortOption = coinViewModel.sortOption == .holdings ? .holdingsReverced : .holdings
+                    }
+                }
             }
-            Text("Price")
-                .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
-            
+            HStack(spacing: 4) {
+                Text("Price")
+                Image(systemName: "chevron.down")
+                    .opacity((coinViewModel.sortOption == .price || coinViewModel.sortOption == .priceReverced) ? 1.0 : 0.0 )
+                    .rotationEffect(Angle(degrees: coinViewModel.sortOption == .price ? 0 : 180))
+            }
+            .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+            .onTapGesture {
+                withAnimation {
+                    coinViewModel.sortOption = coinViewModel.sortOption == .price ? .priceReverced : .price
+                }
+            }
             Button {
                 withAnimation(.linear(duration: 2.0)) {
                     coinViewModel.reloadData()
