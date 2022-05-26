@@ -17,6 +17,8 @@
 		A886783F283B724200525B5F /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A886783D283B724200525B5F /* PortfolioContainer.xcdatamodeld */; };
 		A8867841283B730800525B5F /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8867840283B730800525B5F /* PortfolioDataService.swift */; };
 		A88752A428350F4F00FC6DA1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88752A328350F4F00FC6DA1 /* HomeViewModel.swift */; };
+		A89028C1283F5C4F009287DD /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89028C0283F5C4F009287DD /* ChartView.swift */; };
+		A89028C3283F6807009287DD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89028C2283F6807009287DD /* Date.swift */; };
 		A8988FA4283E22550015BCC3 /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8988FA3283E22550015BCC3 /* CoinDetailModel.swift */; };
 		A8988FA6283E276C0015BCC3 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8988FA5283E276C0015BCC3 /* DetailViewModel.swift */; };
 		A8988FA8283E27D70015BCC3 /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8988FA7283E27D70015BCC3 /* CoinDetailDataService.swift */; };
@@ -56,6 +58,8 @@
 		A886783E283B724200525B5F /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
 		A8867840283B730800525B5F /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		A88752A328350F4F00FC6DA1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A89028C0283F5C4F009287DD /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		A89028C2283F6807009287DD /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		A8988FA3283E22550015BCC3 /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
 		A8988FA5283E276C0015BCC3 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		A8988FA7283E27D70015BCC3 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A867C211283D086800A94719 /* DetailView.swift */,
+				A89028C0283F5C4F009287DD /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				A8C86A7E2833C14900724770 /* PreviewProvider.swift */,
 				A8C86A802833C63700724770 /* Double.swift */,
 				A8B6E2AE2837636B0002928B /* UIApplication.swift */,
+				A89028C2283F6807009287DD /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 				A8F432082836665F00FAFF61 /* CoinImageSevrice.swift in Sources */,
 				A8F4320C2836A65B00FAFF61 /* LocalFileManager.swift in Sources */,
 				A8099B4528377FFC00763F31 /* StatisticModel.swift in Sources */,
+				A89028C3283F6807009287DD /* Date.swift in Sources */,
 				A8B9F0F528329A5E00DED873 /* ContentView.swift in Sources */,
 				A8B9F10A2832A14300DED873 /* HomeView.swift in Sources */,
 				A8B9F0F328329A5E00DED873 /* CryptoApp.swift in Sources */,
@@ -377,6 +384,7 @@
 				A8988FA4283E22550015BCC3 /* CoinDetailModel.swift in Sources */,
 				A8099B472837819F00763F31 /* MarketView.swift in Sources */,
 				A8988FA8283E27D70015BCC3 /* CoinDetailDataService.swift in Sources */,
+				A89028C1283F5C4F009287DD /* ChartView.swift in Sources */,
 				A8988FA6283E276C0015BCC3 /* DetailViewModel.swift in Sources */,
 				A8867841283B730800525B5F /* PortfolioDataService.swift in Sources */,
 			);
