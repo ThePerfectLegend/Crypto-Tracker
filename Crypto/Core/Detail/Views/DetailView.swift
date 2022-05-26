@@ -79,10 +79,9 @@ extension DetailView {
                         .lineLimit(showFullDesc ? nil : 3)
                         .font(.callout)
                         .foregroundColor(Color.theme.secondaryText)
+                        .animation(showFullDesc ? Animation.easeInOut : .none, value: showFullDesc)
                     Button {
-                        withAnimation(.easeInOut) {
-                            showFullDesc.toggle()
-                        }
+                        showFullDesc.toggle()
                     } label: {
                         Text(showFullDesc ? "Less" : "Read more...")
                             .font(.callout)
