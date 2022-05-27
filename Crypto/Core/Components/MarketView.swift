@@ -15,6 +15,7 @@ struct MarketView: View {
         VStack(alignment: .leading, spacing: 4) {
             Text(stat.title)
                 .font(.subheadline)
+                .fontWeight(.medium)
                 .foregroundColor(Color.theme.secondaryText)
             Text(stat.value)
                 .font(.headline)

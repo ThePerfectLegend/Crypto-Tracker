@@ -16,7 +16,7 @@ struct HomeStatView: View {
         HStack {
             ForEach(homeViewModel.statistic) { stat in
                 MarketView(stat: stat)
-                    .frame(width: UIScreen.main.bounds.width / 3)
+                    .frame(width: UIScreen.main.bounds.width / 3.25)
             }
         }
         .frame(width: UIScreen.main.bounds.width, alignment: showPortfolio ? .trailing : .leading)
