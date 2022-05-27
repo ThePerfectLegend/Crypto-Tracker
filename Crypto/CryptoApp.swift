@@ -27,6 +27,7 @@ struct CryptoApp: App {
                         .navigationBarHidden(true)
                 }
                 .environmentObject(coinViewModel)
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 ZStack {
                     if showLaunchView {

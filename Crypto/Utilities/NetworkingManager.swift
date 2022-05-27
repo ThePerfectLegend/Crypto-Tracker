@@ -25,10 +25,11 @@ class NetworkingManager {
     }
     
     static func download(url: URL) -> AnyPublisher<Data, Error> {
-        return URLSession.shared.dataTaskPublisher(for: url)
-            .subscribe(on: DispatchQueue.global(qos: .default))
+        return URLSession.shared.dataTaskPublisher(for: url) // executing in background thread automaticly
+//            .subscribe(on: DispatchQueue.global(qos: .default)) <- no need subscribe here
             .tryMap({ try handleURLResponce(output: $0, url: url) })
-            .receive(on: DispatchQueue.main)
+            .retry(3)
+//            .receive(on: DispatchQueue.main) <- going in main thread in used services
             .eraseToAnyPublisher()
     }
     
