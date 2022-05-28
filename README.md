@@ -6,7 +6,7 @@ SwiftUI Crypto app uses MVVM Architecture, Combine, CoreData and API request to 
 ![iphone-12--black_4](https://user-images.githubusercontent.com/94032706/170822051-63fa7a45-0f47-4a55-92a3-bd6af73d516a.jpg)
 
 
-## Technologies & Funktionality 
+## Technologies & Functionality 
 
 - Project uses MVVM Architecture with additional layers between Model and Views. API request created in independent network layer of class `NetworkingManager` and using in different `DataServices` with API requests.
 - `DataServices` connected with ViewModel by `@Publisher` and `@Subcribers` pattern from `Combine` framework. It allows to keep data actual condition. To avoid additional request to API download images saves in `fileManager`.
