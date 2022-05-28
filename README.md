@@ -8,12 +8,10 @@ SwiftUI Crypto app uses MVVM Architecture, Combine, CoreData and API request to 
 
 ## Technologies & Funktionality 
 
-- Project uses MVVM Architecture with additional layers between Model and Views. API request created in independent network layer of class `NetworkingManager` and using in different DataServices with API requests.
+- Project uses MVVM Architecture with additional layers between Model and Views. API request created in independent network layer of class `NetworkingManager` and using in different `DataServices` with API requests.
 - `DataServices` connected with ViewModel by `@Publisher` and `@Subcribers` pattern from `Combine` framework. It allows to keep data actual condition. To avoid additional request to API download images saves in `fileManager`.
 - User can create own cryptocurrency portfolio by add, edit and delete coins. All portfolio data saves in `CoreData`.
 - The app implemented custom and reusable `SearchBar`. Filtering data based on search bar text using `Combine`.
 - User can reload the List of coins with updated data from API and sorting it by market position, price, and holdings with animations.
-- In `DetailView` created a custom animated line chart to display historical price data. Downloaded data is displaying in grid format with reusable components.
-- Coin description section has animated expand and collapse options.
-- Settings screen using a List with Sections.
+- In `DetailView` created a custom animated line chart to display historical price data. Downloaded data is displaying in grid format with reusable components. Coin description section has animated expand and collapse options.
 - Launch screen is combined with `UIKit` and `SwiftUI` loading animation.
