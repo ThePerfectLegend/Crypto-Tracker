@@ -1,9 +1,9 @@
 # Crypto-Tracker
 SwiftUI Crypto app uses MVVM Architecture, Combine, CoreData and API request to CoinGecko. Crypto-Tracker allows user observe situation on market, track cryptocurrency prices, create and edit own portfolio.
 
-![iphone-12--black_2](https://user-images.githubusercontent.com/94032706/170821906-cdcb82e2-2170-442d-bd75-cec458d435e6.jpg)
-![iphone-12--black_3](https://user-images.githubusercontent.com/94032706/170821985-e0057237-fd6f-4015-b899-458c127b6c7c.jpg)
-![iphone-12--black_4](https://user-images.githubusercontent.com/94032706/170822051-63fa7a45-0f47-4a55-92a3-bd6af73d516a.jpg)
+![GitHubDemo](https://user-images.githubusercontent.com/94032706/170973512-b4d5ef65-78cf-45c9-8fc7-9f8519b1ab2a.png)
+![GitHubDemo2](https://user-images.githubusercontent.com/94032706/170973696-1844de22-ca79-4738-9918-67f2f182d917.png)
+![GitHubDemo_4](https://user-images.githubusercontent.com/94032706/170973253-a15d0861-abc8-49b2-b144-318a2dd23b7f.png)
 
 
 ## Technologies & Functionality 
