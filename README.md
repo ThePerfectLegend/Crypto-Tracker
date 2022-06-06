@@ -15,3 +15,8 @@ SwiftUI Crypto app uses MVVM Architecture, Combine, CoreData and API request to 
 - User can reload the List of coins with updated data from API and sorting it by market position, price, and holdings with animations.
 - In `DetailView` created a custom animated line chart to display historical price data. Downloaded data is displaying in grid format with reusable components. Coin description section has animated expand and collapse options.
 - Launch screen is combined with `UIKit` and `SwiftUI` loading animation. Added app icon.
+
+
+## To Do
+- Replace api calls to async/await
+- Refact code to my own style
