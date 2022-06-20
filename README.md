@@ -19,4 +19,3 @@ SwiftUI Crypto app uses MVVM Architecture, Combine, CoreData and API request to 
 
 ## To Do
 - Replace api calls to async/await
-- Refact code to my own style
